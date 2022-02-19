@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkAnswer(text)
+            {
+                if (status == 0)
+                {
+                    if (text == "right1")
+                    {
+                        document.getElementById(text).style.backgroundColor = "Green";
+                        document.getElementById("text1").innerHTML = "Correct";
+
+                    }
+                    else
+                    {
+                        document.getElementById(text).style.backgroundColor = "Red";
+                        document.getElementById("text1").innerHTML = "Incorrect";
+                    }
+                }
+            }
+            function checkAnswerSecond()
+            {
+                if (document.getElementById("input2").value == "1837")
+                {
+                    document.getElementById("text2").innerHTML = "Correct";
+                    document.getElementById("input2").style.backgroundColor = "Green";
+                }
+                else
+                {
+                    document.getElementById("text2").innerHTML = "Incorrect";
+                    document.getElementById("input2").style.backgroundColor = "Red";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3> How many Bits are there in 1 Byte? </h3>
+                <button id="wrong1" type="submit" onClick="checkAnswer(this.id)"> 6 Bits </button>
+                <button id="wrong2" type="submit" onClick="checkAnswer(this.id)"> 4 Bits </button>
+                <button id="right1" type="submit" onClick="checkAnswer(this.id)"> 8 Bits </button>
+                <button id="wrong3" type="submit" onClick="checkAnswer(this.id)"> 7 Bits </button>
+
+                <h4 id="text1"></h4>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3> In which year computer was invented? </h3>
+                <input id="input2" type="text">
+                <button id="check2" type="submit" onClick="checkAnswerSecond()"> Check answer </button>
+                <h4 id="text2"></h4>
+            </div>
+        </div>
+    </body>
+</html>
