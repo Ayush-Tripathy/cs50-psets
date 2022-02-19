@@ -1,0 +1,123 @@
+
+.centertext {
+    color: #222831;
+    font-size: 400%;
+    line-height: 0.9;
+}
+.centertext2 {
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    font-size: 150%;
+    color: #222831;
+}
+.textname {
+    color: #f96d00;
+    line-height: 0.7;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('./images/bg/bg-1.jpg') no-repeat center center/cover;
+    height: 689px;
+    width: 100%;
+    z-index: -1;
+}
+.nav-link {
+    color: #222831;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.vertical-center {
+    margin-left: 100px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.btn-primary {
+    background-color: #f96d00;
+    color: #222831;
+    font-weight: 400;
+    font-family: monospace;
+    border-color: #f96d00;
+}
+.btn-primary:hover,
+.btn-primary:active    {
+    background-color: #fba834;
+    color: White;
+    font-weight: 400;
+    border-color: #fba834;
+}
+.btn-primary:focus{
+    background-color: #fba834;
+    border-color: #fba834;
+    font-weight: 400;
+    box-shadow: 0 0 0 0.27rem rgba(241, 196, 15, 0.5) !important;
+}
+
+.btn-outline-primary {
+    color: #222831;
+    font-family: monospace;
+    font-weight: 400;
+    border-color: #f96d00;
+}
+.btn-outline-primary:hover{
+    background-color: #fba834;
+    color: White;
+    font-weight: 400;
+    border-color: #fba834;
+}
+.btn-outline-primary:focus{
+    border-color: #fba834;
+    font-weight: 400;
+    box-shadow: 0 0 0 0.27rem rgba(241, 196, 15, 0.5) !important;
+
+}
+
+/* About Me page */
+#about {
+    display: flex;
+    background: url('./images/bg/bg-2.jpg') no-repeat center center/cover;
+    align-items: top;
+    height: 689px;
+    width: 100%;
+    z-index: -1;
+    justify-content: space-around;
+}
+#aboutme {
+    margin-top: 4rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 300%;
+    color: #f96d00;
+}
+#about-text {
+    font-size: 130%;
+    margin: 2rem;
+    color: #222831;
+}
+
+.about-image {
+    margin: 4rem;
+    height: auto;
+    width: 430px;
+}
+#fb-icon {
+    margin-left: 2rem;
+    margin-right: 0.2rem;
+    color: #f96d00;
+}
+#icon {
+    margin-right: 0.2rem;
+    color: #f96d00;
+}
